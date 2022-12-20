@@ -1,15 +1,18 @@
+import { Pressable } from "react-native";
 import { Text } from "react-native";
 import React from "react";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
-const Untitled1 = () => {
+const Untitled1 = ({
+  navigation
+}) => {
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><Text style={styles.mhyHSwyU}>Lorem ipsum…</Text></ScrollView>
+    }} style={styles.hmoREHiy}><Pressable onPress={() => navigation.navigate("Untitled2")}><Text style={styles.mhyHSwyU}>Lorem ipsum…</Text></Pressable><Pressable onPress={{}}><Text style={styles.LfHzCEDq}>Lorem ipsum…</Text></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
@@ -51,6 +54,17 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   mhyHSwyU: {
+    width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  hmoREHiy: {
+    width: 357,
+    height: 573
+  },
+  LfHzCEDq: {
     width: 100,
     height: 50,
     lineHeight: 14,
